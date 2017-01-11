@@ -1,0 +1,127 @@
+html, body {
+	background-color: #F6F6F6;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	height: 100%;
+	margin: 10px;
+	padding: 0;
+}
+
+/* HEADER */
+
+
+.header {
+	display: flex;
+	position: relative;
+	left: 0;
+	right: 0;
+	height: 80px;
+	line-height: 80px;
+	background-color: lightblue;
+}
+
+#identification {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+#panier {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+form .erreur {
+	color: #900;
+	margin: 0px;
+	padding: 0px;
+}
+
+.erreurs0 {
+	color: #900;
+}
+
+#accueil {
+	display: left;
+    text-decoration:none;
+    color: inherit;
+}
+
+#rechercheArticle {
+	display: left;
+}
+
+table {
+	text-align: center;
+	border: 3px width: 50%;
+}
+
+td {
+	text-align: center;
+	border-width: 3px;
+}
+
+td {
+	border-width: 3px;
+}
+
+form label[for=monEmail] {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form label[for=monMotdepasse] {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form label[for=nom] {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form label[for=prenom] {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form label[for=adresse] {
+	float: left;
+	width: 200px;
+	margin: 3px 0px 0px 0px;
+}
+
+form input {
+	margin: 10px 10px 0px 0px;
+	border: 1px #999 solid;
+}
+
+form input.sansLabel {
+	margin-left: 200px;
+}
+
+form .requis {
+	color: #c00;
+}
+
+fieldset {
+	padding: 10px;
+	border: 1px #0568CD solid;
+}
+
+legend {
+	font-weight: bold;
+	color: #0568CD;
+}

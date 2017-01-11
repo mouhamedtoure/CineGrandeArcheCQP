@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.13" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="fr.demos.poe.projet.librairie.metier.ArticleDivers" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/ArticleDivers.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="353" x="1143" y="1408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fr.demos.poe.projet.librairie.metier.Authentification" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Authentification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="154" x="1258" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="fr.demos.poe.projet.librairie.metier.StockException" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/StockException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="205" x="312" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fr.demos.poe.projet.librairie.metier.MyLoginException" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/MyLoginException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="153" x="119" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.demos.poe.projet.librairie.metier.Materialise" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Materialise.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="171" x="932" y="1408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="6" language="java" name="fr.demos.poe.projet.librairie.metier.Etat" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Etat.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="153" x="240" y="1408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="7" language="java" name="fr.demos.poe.projet.librairie.metier.Livre" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Livre.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="459" x="433" y="1408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="fr.demos.poe.projet.librairie.metier.LignePanier" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/LignePanier.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="153" x="557" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="fr.demos.poe.projet.librairie.metier.Compte" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Compte.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="222" x="750" y="374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="fr.demos.poe.projet.librairie.metier.Panier" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Panier.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="206" x="654" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="fr.demos.poe.projet.librairie.metier.Commande" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Commande.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="153" x="982" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="fr.demos.poe.projet.librairie.metier.Article" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Article.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="567" width="291" x="433" y="801"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="fr.demos.poe.projet.librairie.metier.Dematerialise" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/Dematerialise.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="157" x="43" y="1408"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="fr.demos.poe.projet.librairie.metier.LigneCommande" project="CineGrandeArche" 
+    file="/CineGrandeArche/src/fr/demos/poe/projet/librairie/metier/LigneCommande.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="153" x="387" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="15">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="16" name="materiel"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="19">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="20" name="lignesPanier"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="23">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="24" name="article"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="26">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="27" name="compte"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="30" name="etat"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="33" name="article"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="35">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="36" name="demat"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
