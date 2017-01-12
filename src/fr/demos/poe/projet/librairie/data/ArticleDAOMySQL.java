@@ -19,7 +19,7 @@ import fr.demos.poe.projet.librairie.metier.Livre;
 public class ArticleDAOMySQL implements ArticleDAO {
 
 	// private Context context;
-	@Resource(mappedName="java:comp/env/jdbc/CineGrandeArche")
+	@Resource(name="jdbc/CineGrandeArche")
 	private DataSource dataSource;
 
 	public ArticleDAOMySQL() throws Exception {

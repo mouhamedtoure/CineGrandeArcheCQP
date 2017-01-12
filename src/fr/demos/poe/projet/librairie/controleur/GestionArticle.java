@@ -40,7 +40,6 @@ public class GestionArticle extends HttpServlet {
 //
 //		try {
 //
-//			ArticleDAOMySQL articleDAO = new ArticleDAOMySQL();
 //			// session.setAttribute("mesArticles", articleDAO.select(null));
 //
 //		} catch (Exception e) {
@@ -62,6 +61,7 @@ public class GestionArticle extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		RequestDispatcher rd = null;
 		HttpSession session = request.getSession();
+
 		Panier panier = (Panier) session.getAttribute("monPanier");
 		@SuppressWarnings("unchecked")
 		ArrayList<Article> articlesP = (ArrayList<Article>) session.getAttribute("mesArticles");

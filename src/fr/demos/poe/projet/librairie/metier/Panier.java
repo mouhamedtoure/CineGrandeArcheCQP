@@ -1,12 +1,15 @@
 package fr.demos.poe.projet.librairie.metier;
 
+// import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import javax.enterprise.context.SessionScoped;
+// import javax.enterprise.context.SessionScoped;
+// import javax.inject.Named;
 
-@SessionScoped
-public class Panier {
+// @Named(value="monPanier")
+// @SessionScoped
+public class Panier /* implements Serializable*/ {
 
 	private Compte compte;
 	private ArrayList<LignePanier> lignesPanier = new ArrayList<LignePanier>();
