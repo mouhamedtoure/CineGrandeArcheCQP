@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import fr.demos.poe.projet.librairie.data.ArticleDAO;
 // import fr.demos.poe.projet.librairie.data.*;
 import fr.demos.poe.projet.librairie.metier.*;
 
@@ -23,6 +25,7 @@ import fr.demos.poe.projet.librairie.metier.*;
 @WebServlet(name = "Accueil", urlPatterns = { "/GestionArticle" })
 public class GestionArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	@Inject private ArticleDAO dao;
 
 	public GestionArticle() {
 		super();
@@ -36,16 +39,16 @@ public class GestionArticle extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-//		HttpSession session = request.getSession();
-//
-//		try {
-//
-//			// session.setAttribute("mesArticles", articleDAO.select(null));
-//
-//		} catch (Exception e) {
-//
-//			e.printStackTrace();
-//		}
+		HttpSession session = request.getSession();
+
+		try {
+
+			  session.setAttribute("mesArticles", dao.select(null));
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
 
 		RequestDispatcher rd = request.getRequestDispatcher("/AccueilVue.jsp");
 		rd.forward(request, response);
