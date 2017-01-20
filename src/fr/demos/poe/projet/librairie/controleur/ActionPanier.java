@@ -75,7 +75,8 @@ public class ActionPanier extends HttpServlet {
 
 		}
 
-		out.println(panier.getPrixTotal()+":"+quantite);
+		out.println(panier.getPrixTotal());
+	
 
 	}
 

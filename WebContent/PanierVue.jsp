@@ -20,20 +20,17 @@ function panierAjax() {
 		if (xhr.readyState == 4) {
 			// recuperation balise span 
 			
-			var  result1= document.getElementById("affichagePrix");
-		//	var  result2= document.getElementById("PrixTotal");
-			
-			
-			
+			var  result= document.getElementById("affichagePrix");
+					
 			if (xhr.status == 200) {
 				// on remplit le corps du span avec ce qui vient du serveur
-				mesModifs.innerHTML = xhr.responseText;
+				result.innerHTML = xhr.responseText;
 			}
 		}
 	};
 	
-	var modif= document.getElementById('modifQuantite').value;
-	xhr.open("GET", "ActionPanier?modifQuantite="+ modif, true);
+	var modif= document.getElementById('affichePrix').value;
+	xhr.open("GET", "ActionPanier?affichePrix="+ modif, true);
 	xhr.send();
 }
 </script>
@@ -111,7 +108,7 @@ function panierAjax() {
 										value="${lignePanier.article.ref}" /> <input type="number"
 										name="quantity" value="${lignePanier.quantite}" step="1"
 										min="0" max="${lignePanier.article.getMateriel().stock}">
-									<input type="button" id="modifQuantite" onclick="panierAjax();" value="Modifier" name="action">
+									<input type="button" id="affichePrix" onclick="panierAjax();" value="Modifier" name="action">
 								</form>
 
 							</c:if></td>
