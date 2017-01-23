@@ -25,7 +25,8 @@ import fr.demos.poe.projet.librairie.metier.*;
 @WebServlet(name = "Accueil", urlPatterns = { "/GestionArticle" })
 public class GestionArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	@Inject private ArticleDAO dao;
+	@Inject
+	private ArticleDAO dao;
 
 	public GestionArticle() {
 		super();
@@ -43,7 +44,7 @@ public class GestionArticle extends HttpServlet {
 
 		try {
 
-			  session.setAttribute("mesArticles", dao.select(null));
+			session.setAttribute("mesArticles", dao.select(null));
 
 		} catch (Exception e) {
 
@@ -114,21 +115,20 @@ public class GestionArticle extends HttpServlet {
 					break;
 
 				}
-				
+
 			}
 			if (panier.getCompte() == null) {
 
 				rd = request.getRequestDispatcher("/AccueilVue.jsp");
 
-			} 
-			if(panier.getCompte()!=null)
-				{
+			}
+			if (panier.getCompte() != null) {
 				rd = request.getRequestDispatcher("/CompteVue.jsp");
 
 			}
 
 		}
-		session.setAttribute("compteurPanier", panier.getCompteur());
+		
 		rd.forward(request, response);
 	}
 }

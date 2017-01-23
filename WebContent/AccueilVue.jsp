@@ -8,6 +8,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Accueil</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+
+
+<script src="malib.js">
+
+</script>
+
+
 </head>
 <body>
 <jsp:include page="/MenuInscription.jsp"/>
@@ -45,15 +52,18 @@
 				
 				</td>
 				
-				<td>	<form action="GestionArticle" method="post"> 
+				<td>
 
-						<input type="hidden" name="Reference" value="${article.ref}" /> <input
-							type="submit" value="Ajouter" name="action" />
+						 <input
+							type="button" onclick=
+							"accueilAjax('${article.ref}');" value="Ajouter" name="action" />
 							&nbsp; &nbsp;
+							
+						<form  action="GestionArticle" method="POST">
 							<input type="hidden" name="Reference" value="${article.ref}" /> <input
 							type="submit" value="Details" name="action" />
-
-					</form>
+						</form>
+			
 				
 				<td>
 				<span class="erreurs0">${erreurs0[article.ref]}</span>

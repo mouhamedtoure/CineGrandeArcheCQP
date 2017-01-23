@@ -35,7 +35,7 @@
 
 </c:choose>
 
-		<a id="panier" href="PanierVue.jsp"> Panier (${compteurPanier})</a>
+		<a id="panier" href="PanierVue.jsp"> Panier(<span id='modifQuantiteTot'>${monPanier.compteur}</span>)</a>
 
 	</div>
 </body>

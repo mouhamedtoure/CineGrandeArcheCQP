@@ -33,7 +33,7 @@ public class CineListerner implements ServletContextListener, HttpSessionListene
 
 		Panier panier = new Panier();
 		arg0.getSession().setAttribute("monPanier", panier);
-		arg0.getSession().setAttribute("compteurPanier", panier.getCompteur());
+	
 
 	}
 

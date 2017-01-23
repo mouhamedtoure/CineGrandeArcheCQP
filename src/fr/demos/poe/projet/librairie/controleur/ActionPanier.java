@@ -40,15 +40,16 @@ public class ActionPanier extends HttpServlet {
 		int quantite = 0;
 		HttpSession session = request.getSession();
 		PrintWriter out = response.getWriter();
-		String reference = request.getParameter("Reference");
+		String reference = request.getParameter("ref");
 		// String action = request.getParameter("action");
 		Panier panier = (Panier) session.getAttribute("monPanier");
 		@SuppressWarnings("unchecked")
 		ArrayList<Article> articlesP = (ArrayList<Article>) session.getAttribute("mesArticles");
 		
-		if (request.getParameter("quantity") != null) {
+		String qteString = request.getParameter("qte");
+		if (qteString != null) {
 
-			quantite = Integer.parseInt(request.getParameter("quantity"));
+			quantite = Integer.parseInt(qteString);
 
 		}
 		Map<String, String> erreurs0 = new HashMap<String, String>();
@@ -75,8 +76,7 @@ public class ActionPanier extends HttpServlet {
 
 		}
 
-		out.println(panier.getPrixTotal());
-	
+		out.println(panier.getPrixTotal()+"+"+panier.getCompteur());
 
 	}
 

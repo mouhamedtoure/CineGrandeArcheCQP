@@ -9,30 +9,8 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 
 
-<script>
-function panierAjax() {
-	//alert("on est dans appel");
-	
-		// alert("AJAX request successfully completed");
-	var xhr;
-	xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4) {
-			// recuperation balise span 
-			
-			var  result= document.getElementById("affichagePrix");
-					
-			if (xhr.status == 200) {
-				// on remplit le corps du span avec ce qui vient du serveur
-				result.innerHTML = xhr.responseText;
-			}
-		}
-	};
-	
-	var modif= document.getElementById('affichePrix').value;
-	xhr.open("GET", "ActionPanier?affichePrix="+ modif, true);
-	xhr.send();
-}
+<script src="malib.js">
+
 </script>
 </head>
 <body>
@@ -71,20 +49,19 @@ function panierAjax() {
 
 					<th>Choix quantité &nbsp;</th>
 
-					<th>Quantité &nbsp;</th>
-
 					<th>Prix à l'unité &nbsp;</th>
 
 					<th>Suppression &nbsp;</th>
 
 				
-					<td> <span id="affichagePrix">  </span></td> 
+					<td><span id="modifPrix" >  </span></td> 
 
 				</tr>
 
 
-
+				<c:set var="indice" value="0"> </c:set> 
 				<c:forEach items="${monPanier.getListeAchat()}" var="lignePanier">
+				<c:set var="indice" value="${indice+1}"> </c:set>
 					<tr>
 						<td><img
 							src="<c:url value='Images/${lignePanier.article.getImage()}'/>"
@@ -94,7 +71,7 @@ function panierAjax() {
 
 
 						<td>${lignePanier.article.nom}
-							<form action="ActionPanier" method="post">
+							<form action="GestionArticle" method="POST">
 								<input type="hidden" name="ModifierArticle"
 									value="${lignePanier.article.ref}">
 
@@ -102,19 +79,15 @@ function panierAjax() {
 						</td>
 
 						<td><c:if
-								test="${not empty lignePanier.article.getMateriel()}">
-								<form action="ActionPanier" method=post>
-									<input type="hidden" name="Reference"
-										value="${lignePanier.article.ref}" /> <input type="number"
-										name="quantity" value="${lignePanier.quantite}" step="1"
-										min="0" max="${lignePanier.article.getMateriel().stock}">
-									<input type="button" id="affichePrix" onclick="panierAjax();" value="Modifier" name="action">
-								</form>
+							test="${not empty lignePanier.article.getMateriel()}"> 
+							<input type="number" name="quantity" id="qte${indice}" value="${lignePanier.quantite}" step="1" min="0" max="${lignePanier.article.getMateriel().stock}">
+							<input type="button"  onclick=
+							"panierAjax('${lignePanier.article.ref}',
+							document.getElementById('qte${indice}').value);" value="Modifier" name="action"/>
 
 							</c:if></td>
 
 
-						<td>${lignePanier.quantite}</td>
 						<td>${lignePanier.article.prixHT}&euro;</td>
 						<td>
 
