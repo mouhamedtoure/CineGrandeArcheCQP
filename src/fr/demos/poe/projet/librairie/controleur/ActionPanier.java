@@ -45,7 +45,7 @@ public class ActionPanier extends HttpServlet {
 		Panier panier = (Panier) session.getAttribute("monPanier");
 		@SuppressWarnings("unchecked")
 		ArrayList<Article> articlesP = (ArrayList<Article>) session.getAttribute("mesArticles");
-		
+	 
 		String qteString = request.getParameter("qte");
 		if (qteString != null) {
 
@@ -75,8 +75,8 @@ public class ActionPanier extends HttpServlet {
 			}
 
 		}
-
-		out.println(panier.getPrixTotal()+"+"+panier.getCompteur());
+		String jsonData = request.getParameter("donnees"); 
+		System.out.println(jsonData);
 
 	}
 

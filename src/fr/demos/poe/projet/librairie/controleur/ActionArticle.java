@@ -47,7 +47,7 @@ public class ActionArticle extends HttpServlet {
 		Map<String, String> erreurs0 = new HashMap<String, String>();
 		@SuppressWarnings("unchecked")
 		ArrayList<Article> articlesP = (ArrayList<Article>) session.getAttribute("mesArticles");
-		 String jsonData = request.getParameter("json");  
+		
 		
 
 			// le panier existe peut-être déjà , utiliser une session
@@ -77,8 +77,8 @@ public class ActionArticle extends HttpServlet {
 		
 			
 			
-			
-		  out.println(jsonData) ;
+		String jsonData = request.getParameter("donnees");  
+		 System.out.println(jsonData) ;
 
 			
 
