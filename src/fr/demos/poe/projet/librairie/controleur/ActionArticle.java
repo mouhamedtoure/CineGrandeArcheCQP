@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -77,8 +76,8 @@ public class ActionArticle extends HttpServlet {
 		
 			
 			
-		String jsonData = request.getParameter("donnees");  
-		 System.out.println(jsonData) ;
+		response.setContentType("application/json");
+		out.println("{\"quantiteTotal\":"+panier.getCompteur()+"}");
 
 			
 

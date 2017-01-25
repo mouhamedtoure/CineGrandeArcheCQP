@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import fr.demos.poe.projet.librairie.data.ArticleDAO;
-import fr.demos.poe.projet.librairie.data.ArticleDAOMySQL;
 
 /**
  * Servlet implementation class GestionRecherche

@@ -75,11 +75,14 @@ public class ActionPanier extends HttpServlet {
 			}
 
 		}
-		String jsonData = request.getParameter("donnees"); 
-		System.out.println(jsonData);
+		
+	
+		
+		response.setContentType("application/json");
+		out.println("{\"quantiteTotal\":"+panier.getCompteur()+",\"prixTotal\":"+panier.getPrixTotal()+"}");
 
+		
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)

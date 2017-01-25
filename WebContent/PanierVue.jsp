@@ -54,7 +54,7 @@
 					<th>Suppression &nbsp;</th>
 
 				
-					<td><span id="modifPrix" >  </span></td> 
+					<td><span id="prixTotal" > ${monPanier.prixTotal}</span> &euro;</td> 
 
 				</tr>
 
